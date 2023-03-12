@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: beige;
+  background-color: #fff !important;
 }
 
 nav {
@@ -22,7 +22,7 @@ nav {
 }
 
 .nav-link {
-  color: #fff;
+  color: #fff !important;
   margin: 0 2rem 0 0;
   transition: all 0.3s;
   cursor: pointer;
@@ -34,6 +34,7 @@ nav {
 }
 
 main {
+  margin-top: 50px;
   min-height: 85vh;
   display: flex;
   justify-content: center;
@@ -42,7 +43,7 @@ main {
 
 h2 {
   text-align: center;
-  margin: 3rem;
+  /* margin: 3rem; */
 }
 
 table {
@@ -52,13 +53,14 @@ table {
 
 td,
 th {
-  border: 1px solid;
-  padding: 1rem;
+  border: 1px solid !important;
+  padding: 20px 10px 10px;
+  /* padding: 1rem; */
 }
 
 button {
   /* width: 5rem; */
-  margin: 0.5rem;
+  margin: 0.5rem !important;
   padding: 15px 30px;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -67,12 +69,17 @@ button {
   border: 1px solid #000;
   transition: .3s ease all;
   font-weight: 600;
+  width: 100%;
 }
 
 button:hover {
   border: 1px solid #000;
   background-color: #fff;
   color: #000;
+}
+
+.submit-btn {
+  width: 100%;
 }
 
 .add-btn {
@@ -87,6 +94,7 @@ input {
   /* width: 20rem; */
   width: 100%;
   padding: 0.5rem;
+  border: none;
 }
 
 footer {
@@ -96,6 +104,60 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  color:#fff;
+  color: #fff;
   font-weight: 600;
+}
+
+.post-container {
+  background-color: #fff;
+  padding: 20px 20px 10px;
+  width: 600px;
+  box-shadow: 3px 6px 10px grey;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff !important;
+  margin: 0 2rem 0 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.post-heading {
+  font-size: 20px;
+  text-align: center;
+}
+
+li {
+  /* border-bottom: 1px solid grey; */
+  padding-bottom: 15px;
+  border-top: none
+}
+
+.edit-dlt-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.edit-btn {
+  margin-right: 10px;
+}
+
+.like-btn {
+  background-color: blue;
+  border: none;
 }
