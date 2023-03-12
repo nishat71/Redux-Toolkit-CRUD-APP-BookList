@@ -61,7 +61,8 @@ th {
 button {
   /* width: 5rem; */
   margin: 0.5rem !important;
-  padding: 15px 30px;
+  /* padding: 15px 30px; */
+  padding: 10px 20px;
   border-radius: 0.5rem;
   cursor: pointer;
   background: #000;
@@ -103,7 +104,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   color: #fff;
   font-weight: 600;
 }
@@ -142,7 +143,7 @@ footer {
 
 li {
   /* border-bottom: 1px solid grey; */
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
   border-top: none
 }
 
@@ -150,14 +151,57 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
+  /* border-top: 1px solid grey; */
 }
 
-.edit-btn {
+.edit-btn,
+.comment-link {
   margin-right: 10px;
 }
 
-.like-btn {
-  background-color: blue;
-  border: none;
+.like-btn,
+.comment-btn {
+  /* background-color: blue; */
+  background-color: #fff;
+  /* border: none; */
+  color: #000
+}
+
+.like {
+  margin-top: 10px;
+}
+
+.single-post {
+  background-color: rgb(255, 255, 255);
+  /* padding: 20px 20px 10px; */
+  padding: 30px 30px 20px;
+  width: 600px;
+  margin-bottom: 30px;
+  box-shadow: 3px 3px 10px grey;
+}
+
+.comment-icon {
+  /* margin-right:4px; */
+}
+
+.comment-field {
+  background-color: #f0f2f5;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.comment-content{
+  display: flex;
+}
+.cmnt-btn{
+  margin: 0.5rem !important;
+  padding: 10px 0 !important;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  transition: .3s ease all;
+  font-weight: 600;
+  width: 15% !important;
 }

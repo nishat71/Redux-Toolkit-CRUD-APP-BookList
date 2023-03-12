@@ -12,7 +12,7 @@ const EditPost = () => {
     const [id, setId] = useState(location.state.id);
     const [title, setTitle] = useState(location.state.title);
 
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(updatePost({ id, title}));
